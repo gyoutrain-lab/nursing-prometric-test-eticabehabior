@@ -15,9 +15,19 @@
     body {
       margin: 0;
       padding: 0;
-      background: #f0f7ff;
+      background: #f2f7ff;
       font-family: Arial, sans-serif;
       text-align: center;
+    }
+
+    /* ✅ Light red embossed box at the top */
+    .image-box {
+      background: #ffe5e5;
+      padding: 22px;
+      margin: 22px;
+      border-radius: 16px;
+      box-shadow: inset 0 0 12px rgba(255,255,255,0.95),
+                  inset 0 0 8px rgba(0,0,0,0.15);
     }
 
     /* ✅ Three-fourth width top image */
@@ -25,11 +35,11 @@
       width: 75%;
       max-width: 650px;
       height: auto;
-      margin: 25px auto 15px auto;
       display: block;
+      margin: auto;
     }
 
-    /* ✅ Embossed Title Box */
+    /* ✅ Embossed light-blue title box */
     .title-box {
       background: #d8ecff;
       padding: 18px;
@@ -42,8 +52,8 @@
     h1 {
       margin: 0;
       font-size: 20px;
-      color: #003d66;
       font-weight: bold;
+      color: #003d66;
     }
 
     .subtitle {
@@ -53,11 +63,11 @@
       line-height: 1.4;
     }
 
-    /* ✅ Professional Red Button */
+    /* ✅ Professional red button */
     .start-btn {
       display: inline-block;
       margin-top: 25px;
-      padding: 14px 28px;
+      padding: 14px 30px;
       background: #d40000;
       color: white;
       font-size: 18px;
@@ -67,8 +77,9 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.25);
     }
 
+    /* ✅ Footer */
     .footer {
-      margin-top: 40px;
+      margin-top: 45px;
       font-size: 14px;
       color: red;
     }
@@ -77,14 +88,16 @@
 
 <body>
 
-  <!-- ✅ Three-Fourth Wide Top Icon -->
-  <img 
-    class="top-image"
-    src="https://github.com/gyoutrain-lab/nursing-prometric-test-eticabehabior/blob/main/icon15.jpg?raw=1"
-    alt="Icon"
-  />
+  <!-- ✅ Embossed light-red background container -->
+  <div class="image-box">
+    <img 
+      class="top-image"
+      src="https://github.com/gyoutrain-lab/nursing-prometric-test-eticabehabior/blob/main/icon15.jpg?raw=1"
+      alt="Icon"
+    />
+  </div>
 
-  <!-- ✅ Embossed Title Box -->
+  <!-- ✅ Embossed Light-Blue Title Section -->
   <div class="title-box">
     <h1>Behavior Ethic and Infection Control Nursing Prometric Simulation Test</h1>
 
@@ -94,7 +107,7 @@
     </div>
   </div>
 
-  <!-- ✅ Start Test Button -->
+  <!-- ✅ Start the Test Button -->
   <a 
     class="start-btn"
     href="https://script.google.com/macros/s/AKfycbw2aYSUMm1TL4eWDcIp8BjNifrdV1MfaeWKeX5iV8F8aVCef977UdsgzMEeWsO9DOjPyw/exec"
